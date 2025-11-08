@@ -62,5 +62,20 @@ fun Formulir(navController: NavController) {
                 Column(
                     modifier = Modifier.padding(20.dp)
                 ) {
+                    Text(
+                        "Form Registrasi",
+                        fontWeight = FontWeight.Bold,
+                        fontSize = 26.sp,
+                        color = Color.White
+                    )
+                    Spacer(Modifier.height(8.dp))
+                    Text(
+                        "Silakan isi informasi pribadi Anda dengan lengkap dan akurat",
+                        style = MaterialTheme.typography.bodyMedium.copy(
+                            color = Color(0xFFCBD5E1)
+                        )
+                    )
+                }
+            }
 
         }
