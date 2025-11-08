@@ -54,5 +54,13 @@ fun Formulir(navController: NavController) {
                 .verticalScroll(rememberScrollState())
                 .padding(horizontal = 20.dp, vertical = 24.dp)
         ) {
+            Surface(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(16.dp),
+                color = Color(0xFF334155).copy(alpha = 0.5f)
+            ) {
+                Column(
+                    modifier = Modifier.padding(20.dp)
+                ) {
 
         }
