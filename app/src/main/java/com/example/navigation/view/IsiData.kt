@@ -20,8 +20,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
-private val NeonBlue   = Color(0xFF4F46E5)
-private val NeonPurple = Color(0xFF7C3AED)
+private val DeepOcean   = Color(0xFF0284C7)
+private val RoyalViolet = Color(0xFF9333EA)
 
 data class Peserta(
     val nama: String,
