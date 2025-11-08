@@ -77,5 +77,25 @@ fun Formulir(navController: NavController) {
                     )
                 }
             }
+            Spacer(Modifier.height(20.dp))
+            Surface(
+                modifier = Modifier.fillMaxWidth(),
+                shape = RoundedCornerShape(20.dp),
+                color = Color.White,
+                shadowElevation = 8.dp
+            ) {
+                Column(
+                    modifier = Modifier.padding(20.dp),
+                    verticalArrangement = Arrangement.spacedBy(20.dp)
+                ) {
+                    KolomInput(
+                        labelTeks = "Nama Lengkap",
+                        nilaiInput = inputNama,
+                        gantiNilai = { inputNama = it },
+                        teksPlaceholder = "Ketik nama lengkap Anda",
+                        warnaAksen = RoyalViolet
+                    )
 
-        }
+
+
+                }
