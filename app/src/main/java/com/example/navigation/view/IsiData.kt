@@ -31,4 +31,21 @@ fun TampilData(navController: NavController) {
         Peserta("Regan Alisya Anggara", "Laki-laki", "Belum Menikah", "Yogyakarta"),
         Peserta("Ain Yuka Yunanda", "Perempuan", "Belum Menikah", "Bantul")
     )
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.linearGradient(
+                    colors = listOf(
+                        Color(0xFF1E3A8A),
+                        Color(0xFF7C3AED),
+                        Color(0xFFEC4899)
+                    ),
+                    start = Offset(0f, 0f),
+                    end = Offset(1000f, 1000f)
+                )
+            )
+    ) {
+
+
 
