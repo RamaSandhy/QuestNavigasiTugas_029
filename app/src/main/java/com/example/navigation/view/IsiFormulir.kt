@@ -48,3 +48,11 @@ fun Formulir(navController: NavController) {
                 )
             )
     ) {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .verticalScroll(rememberScrollState())
+                .padding(horizontal = 20.dp, vertical = 24.dp)
+        ) {
+
+        }
