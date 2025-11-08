@@ -102,10 +102,24 @@ fun TampilData(navController: NavController) {
                                 color = Color(0xFFFFFFFF)
                             )
                         }
-
+                        Column(
+                            modifier = Modifier.weight(1f)
+                        ) {
+                            Text(
+                                text = peserta.nama,
+                                fontSize = 18.sp,
+                                fontWeight = FontWeight.Medium
+                            )
+                        }
                     }
+                }
+            }
+        }
+    }
+}
 
-                    }
+
+
 
 
 
