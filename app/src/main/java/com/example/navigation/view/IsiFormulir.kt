@@ -95,7 +95,21 @@ fun Formulir(navController: NavController) {
                         teksPlaceholder = "Ketik nama lengkap Anda",
                         warnaAksen = RoyalViolet
                     )
+                    Column {
+                        Text(
+                            "Jenis Kelamin",
+                            style = MaterialTheme.typography.titleMedium.copy(
+                                color = Color(0xFF1E293B),
+                                fontWeight = FontWeight.Bold
+                            )
+                        )
+                        Spacer(Modifier.height(8.dp))
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            horizontalArrangement = Arrangement.spacedBy(12.dp)
+                        ) {
 
 
 
-                }
+
+                        }
