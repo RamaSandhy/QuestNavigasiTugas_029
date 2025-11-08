@@ -24,3 +24,11 @@ data class Peserta(
     val status: String,
     val alamat: String
 )
+@Composable
+fun TampilData(navController: NavController) {
+    val pesertaList = listOf(
+        Peserta("Rama Sandhy Muhammad", "Laki-laki", "Belum Menikah", "Sleman"),
+        Peserta("Regan Alisya Anggara", "Laki-laki", "Belum Menikah", "Yogyakarta"),
+        Peserta("Ain Yuka Yunanda", "Perempuan", "Belum Menikah", "Bantul")
+    )
+
