@@ -19,3 +19,32 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+
+private val DeepOcean   = Color(0xFF0284C7)
+private val RoyalViolet = Color(0xFF9333EA)
+
+@Composable
+fun Formulir(navController: NavController) {
+    var inputNama by remember { mutableStateOf("") }
+    var inputAlamat by remember { mutableStateOf("") }
+
+    val opsiJenisKelamin = listOf("Laki-laki", "Perempuan")
+    var pilihanJK by remember { mutableStateOf(opsiJenisKelamin[0]) }
+
+    val opsiStatus = listOf("Menikah", "Belum Menikah", "Duda/janda")
+    var pilihanStatus by remember { mutableStateOf(opsiStatus[0]) }
+
+    var tampilDialog by remember { mutableStateOf(false) }
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.linearGradient(
+                    colors = listOf(
+                        Color(0xFF1E293B),
+                        Color(0xFF0F172A)
+                    )
+                )
+            )
+    ) {
