@@ -130,7 +130,7 @@ fun Formulir(navController: NavController) {
                                     ) {
                                         Text(
                                             text = item,
-                                            color = if (item == pilihanJK) VividPurple
+                                            color = if (item == pilihanJK) RoyalViolet
                                             else Color(0xFF64748B),
                                             fontWeight = if (item == pilihanJK) FontWeight.Bold
                                             else FontWeight.Medium
