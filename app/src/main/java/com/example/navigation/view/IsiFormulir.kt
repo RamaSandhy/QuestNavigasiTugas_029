@@ -140,6 +140,24 @@ fun Formulir(navController: NavController) {
                             }
                         }
                     }
+                    Column {
+                        Text(
+                            "Status Perkawinan",
+                            style = MaterialTheme.typography.titleMedium.copy(
+                                color = Color(0xFF1E293B),
+                                fontWeight = FontWeight.Bold
+                            )
+                        )
+                        Spacer(Modifier.height(8.dp))
+                        Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                            opsiStatus.forEach { item ->
+                                Surface(
+                                    modifier = Modifier
+                                        .fillMaxWidth()
+                                        .selectable(
+                                            selected = (item == pilihanStatus),
+                                            onClick = { pilihanStatus = item }
+                                        ),
 
 
 
