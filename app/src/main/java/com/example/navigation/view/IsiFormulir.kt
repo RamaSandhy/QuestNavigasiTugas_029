@@ -108,6 +108,22 @@ fun Formulir(navController: NavController) {
                             modifier = Modifier.fillMaxWidth(),
                             horizontalArrangement = Arrangement.spacedBy(12.dp)
                         ) {
+                            opsiJenisKelamin.forEach { item ->
+                                Surface(
+                                    modifier = Modifier
+                                        .weight(1f)
+                                        .selectable(
+                                            selected = (item == pilihanJK),
+                                            onClick = { pilihanJK = item }
+                                        ),
+                                    shape = RoundedCornerShape(12.dp),
+                                    color = if (item == pilihanJK) RoyalViolet.copy(alpha = 0.15f)
+                                    else Color(0xFFF1F5F9),
+                                    border = BorderStroke(
+                                        2.dp,
+                                        if (item == pilihanJK) RoyalViolet else Color.Transparent
+                                    )
+                                ) {
 
 
 
