@@ -124,6 +124,22 @@ fun Formulir(navController: NavController) {
                                         if (item == pilihanJK) RoyalViolet else Color.Transparent
                                     )
                                 ) {
+                                    Box(
+                                        modifier = Modifier.padding(16.dp),
+                                        contentAlignment = Alignment.Center
+                                    ) {
+                                        Text(
+                                            text = item,
+                                            color = if (item == pilihanJK) VividPurple
+                                            else Color(0xFF64748B),
+                                            fontWeight = if (item == pilihanJK) FontWeight.Bold
+                                            else FontWeight.Medium
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
 
 
 
