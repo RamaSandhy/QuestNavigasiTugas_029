@@ -283,7 +283,32 @@ fun Formulir(navController: NavController) {
         )
     }
 }
-
+@Composable
+fun KolomInput(
+    labelTeks: String,
+    nilaiInput: String,
+    gantiNilai: (String) -> Unit,
+    teksPlaceholder: String,
+    warnaAksen: Color
+) {
+    Column {
+        Text(
+            labelTeks,
+            style = MaterialTheme.typography.titleMedium.copy(
+                color = Color(0xFF1E293B),
+                fontWeight = FontWeight.Bold
+            )
+        )
+        Spacer(Modifier.height(8.dp))
+        OutlinedTextField(
+            value = nilaiInput,
+            onValueChange = gantiNilai,
+            placeholder = {
+                Text(
+                    teksPlaceholder,
+                    color = Color(0xFF94A3B8)
+                )
+            },
 
 
 
