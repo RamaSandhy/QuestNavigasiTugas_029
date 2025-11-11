@@ -210,6 +210,24 @@ fun Formulir(navController: NavController) {
             color = Color(0xFF1E293B),
             shadowElevation = 12.dp
         ) {
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(16.dp),
+                horizontalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                OutlinedButton(
+                    modifier = Modifier.weight(1f),
+                    onClick = { navController.navigate("Home") },
+                    shape = RoundedCornerShape(14.dp),
+                    border = BorderStroke(2.dp, DeepOcean),
+                    colors = ButtonDefaults.outlinedButtonColors(
+                        contentColor = DeepOcean
+                    ),
+                    contentPadding = PaddingValues(vertical = 14.dp)
+                ) {
+                    Text("Kembali", fontWeight = FontWeight.SemiBold)
+                }
 
 
 
