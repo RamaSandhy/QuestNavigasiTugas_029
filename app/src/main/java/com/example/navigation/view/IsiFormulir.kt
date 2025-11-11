@@ -309,7 +309,34 @@ fun KolomInput(
                     color = Color(0xFF94A3B8)
                 )
             },
+            modifier = Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(12.dp),
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = warnaAksen,
+                unfocusedBorderColor = Color(0xFFE2E8F0),
+                cursorColor = warnaAksen,
+                focusedContainerColor = warnaAksen.copy(alpha = 0.05f),
+                unfocusedContainerColor = Color(0xFFF8FAFC)
+            )
+        )
+    }
+}
 
-
-
+@Composable
+fun BarisSummary(label: String, isi: String) {
+    Row(
+        modifier = Modifier.fillMaxWidth(),
+        horizontalArrangement = Arrangement.SpaceBetween
+    ) {
+        Text(
+            text = label,
+            color = Color(0xFF64748B),
+            fontWeight = FontWeight.Medium
+        )
+        Text(
+            text = isi,
+            color = Color(0xFF1E293B),
+            fontWeight = FontWeight.Bold
+        )
+    }
 }
