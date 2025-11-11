@@ -158,6 +158,18 @@ fun Formulir(navController: NavController) {
                                             selected = (item == pilihanStatus),
                                             onClick = { pilihanStatus = item }
                                         ),
+                                    shape = RoundedCornerShape(12.dp),
+                                    color = if (item == pilihanStatus) OceanBlue.copy(alpha = 0.15f)
+                                    else Color(0xFFF1F5F9),
+                                    border = BorderStroke(
+                                        2.dp,
+                                        if (item == pilihanStatus) OceanBlue else Color.Transparent
+                                    )
+                                ) {
+                                    Row(
+                                        modifier = Modifier.padding(16.dp),
+                                        verticalAlignment = Alignment.CenterVertically
+                                    ) {
 
 
 
