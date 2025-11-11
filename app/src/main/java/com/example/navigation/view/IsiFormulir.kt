@@ -243,6 +243,24 @@ fun Formulir(navController: NavController) {
         }
     }
 
+    if (tampilDialog) {
+        AlertDialog(
+            onDismissRequest = { tampilDialog = false },
+            title = {
+                Text(
+                    text = "✓ Informasi Tersimpan",
+                    fontWeight = FontWeight.Bold,
+                    color = RoyalViolet
+                )
+            },
+            text = {
+                Column(verticalArrangement = Arrangement.spacedBy(12.dp)) {
+                    BarisSummary("Nama", inputNama)
+                    BarisSummary("Jenis Kelamin", pilihanJK)
+                    BarisSummary("Status", pilihanStatus)
+                    BarisSummary("Alamat", inputAlamat)
+                }
+            },
 
 
 
