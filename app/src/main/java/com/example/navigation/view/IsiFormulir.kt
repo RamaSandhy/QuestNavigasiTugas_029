@@ -190,6 +190,26 @@ fun Formulir(navController: NavController) {
                             }
                         }
                     }
+                    KolomInput(
+                        labelTeks = "Alamat Lengkap",
+                        nilaiInput = inputAlamat,
+                        gantiNilai = { inputAlamat = it },
+                        teksPlaceholder = "Ketik alamat lengkap Anda",
+                        warnaAksen = DeepOcean
+                    )
+                }
+            }
+
+            Spacer(Modifier.height(100.dp))
+        }
+
+        Surface(
+            modifier = Modifier
+                .align(Alignment.BottomCenter)
+                .fillMaxWidth(),
+            color = Color(0xFF1E293B),
+            shadowElevation = 12.dp
+        ) {
 
 
 
