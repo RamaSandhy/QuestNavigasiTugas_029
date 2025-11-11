@@ -228,6 +228,20 @@ fun Formulir(navController: NavController) {
                 ) {
                     Text("Kembali", fontWeight = FontWeight.SemiBold)
                 }
+                Button(
+                    modifier = Modifier.weight(1f),
+                    onClick = { tampilDialog = true },
+                    shape = RoundedCornerShape(14.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = RoyalViolet
+                    ),
+                    contentPadding = PaddingValues(vertical = 14.dp)
+                ) {
+                    Text("✓ Kirim", fontWeight = FontWeight.Bold)
+                }
+            }
+        }
+    }
 
 
 
