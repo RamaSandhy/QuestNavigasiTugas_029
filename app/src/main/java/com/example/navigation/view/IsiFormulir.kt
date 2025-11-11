@@ -159,17 +159,37 @@ fun Formulir(navController: NavController) {
                                             onClick = { pilihanStatus = item }
                                         ),
                                     shape = RoundedCornerShape(12.dp),
-                                    color = if (item == pilihanStatus) OceanBlue.copy(alpha = 0.15f)
+                                    color = if (item == pilihanStatus) DeepOcean.copy(alpha = 0.15f)
                                     else Color(0xFFF1F5F9),
                                     border = BorderStroke(
                                         2.dp,
-                                        if (item == pilihanStatus) OceanBlue else Color.Transparent
+                                        if (item == pilihanStatus) DeepOcean else Color.Transparent
                                     )
                                 ) {
                                     Row(
                                         modifier = Modifier.padding(16.dp),
                                         verticalAlignment = Alignment.CenterVertically
                                     ) {
+                                        RadioButton(
+                                            selected = (item == pilihanStatus),
+                                            onClick = null,
+                                            colors = RadioButtonDefaults.colors(
+                                                selectedColor = DeepOcean
+                                            )
+                                        )
+                                        Text(
+                                            text = item,
+                                            modifier = Modifier.padding(start = 8.dp),
+                                            color = if (item == pilihanStatus) DeepOcean
+                                            else Color(0xFF64748B),
+                                            fontWeight = if (item == pilihanStatus) FontWeight.Bold
+                                            else FontWeight.Medium
+                                        )
+                                    }
+                                }
+                            }
+                        }
+                    }
 
 
 
