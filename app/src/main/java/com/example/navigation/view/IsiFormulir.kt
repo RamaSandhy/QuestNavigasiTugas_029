@@ -261,7 +261,30 @@ fun Formulir(navController: NavController) {
                     BarisSummary("Alamat", inputAlamat)
                 }
             },
+            confirmButton = {
+                Button(
+                    onClick = {
+                        tampilDialog = false
+                        inputNama = ""
+                        inputAlamat = ""
+                        pilihanJK = opsiJenisKelamin[0]
+                        pilihanStatus = opsiStatus[0]
+                    },
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = RoyalViolet
+                    ),
+                    shape = RoundedCornerShape(10.dp)
+                ) {
+                    Text("Tutup")
+                }
+            },
+            shape = RoundedCornerShape(20.dp),
+            containerColor = Color.White
+        )
+    }
+}
 
 
 
-                        }
+
+}
